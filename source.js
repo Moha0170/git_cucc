@@ -6,13 +6,13 @@ document.getElementById("hozzaad").addEventListener("click", () => {
     listaDiv = document.getElementById("lista"); 
     listaDiv.innerHTML = "";
     b = parseInt(lista[0])
-    document.getElementById("legkisebb").innerText = "A legkisebb szám a listából: " + b
+    document.getElementById("legnagyobb").innerText = "A legnagyobb szám a listából: " + b
     for (let i = 0; i < lista.length; i++) {
         a = document.createElement("p");
         a.innerHTML = lista[i]
         listaDiv.appendChild(a);
         if (parseInt(lista[i]) > b) {
-            document.getElementById("legkisebb").innerText = "A legkisebb szám a listából: " + lista[i]
+            document.getElementById("legnagyobb").innerText = "A legnagyobb szám a listából: " + lista[i]
             b = parseInt(lista[i])
         }
     }
