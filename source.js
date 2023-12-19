@@ -11,7 +11,7 @@ document.getElementById("hozzaad").addEventListener("click", () => {
         a = document.createElement("p");
         a.innerHTML = lista[i]
         listaDiv.appendChild(a);
-        if (parseInt(lista[i]) < b) {
+        if (parseInt(lista[i]) > b) {
             document.getElementById("legkisebb").innerText = "A legkisebb szám a listából: " + lista[i]
             b = parseInt(lista[i])
         }
